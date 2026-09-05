@@ -45,7 +45,7 @@ st.markdown("""
 # Load the model
 @st.cache_resource
 def load_model():
-    with open("model.pkl", "rb") as f:
+    with open("face_model.pkl", "rb") as f:
         model = pickle.load(f)
     return model
 
